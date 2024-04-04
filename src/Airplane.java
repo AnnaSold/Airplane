@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Airplane {
         private String name;
         private String color;
@@ -42,5 +44,11 @@ public class Airplane {
                     ", color='" + color + '\'' +
                     ", capacity=" + capacity +
                     '}';
+        }
+        public Airplane[] createArray(int n1, int n2,Airplane a1){
+            Airplane[] planes = new Airplane[4];
+            Arrays.fill(planes, n1,n2,a1);
+            System.out.println(planes[n1]);
+            return planes;
         }
     }

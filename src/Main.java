@@ -7,6 +7,12 @@ public class Main {
         Airplane plane3 = new Airplane("Boeing-777", "gray", 550 );
         Airplane plane4 = new Airplane(" ТУ-154", "white", 180 );
 
-        System.out.println(plane1);
+        plane1.createArray(0,0,plane1);
+        plane2.createArray(1,1,plane2);
+        plane3.createArray(2,2,plane3);
+        plane4.createArray(3,3,plane4);
+
+        //System.out.println(plane1);
     }
+
 }
